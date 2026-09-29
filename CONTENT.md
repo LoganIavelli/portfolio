@@ -2,7 +2,7 @@
 
 Logan is an undergrad student at Michigan State University, studying Information Science with a focus in Human-Centered Technology
 
-Aspiring to work in Business Systems Analysis and DevOps positions once graduated and start a long career in the field
+I am currently studying at Michigan State University projected to graduate in the Fall 2027 semester. Currently aspiring to work in Web Development and DevOps positions once graduated. With experience working in large-team environments in leadership positions, I am eager to get my foot in the industry and to grow into team efforts in large infrastructure projects
 
 # Projects
 ### Chatbot
