@@ -8,6 +8,11 @@ Aspiring to work in Business Systems Analysis and DevOps positions once graduate
 ### Chatbot
 Interactive Chatbot program
 
+### CI/CD Pipeline
+A continuous integration and continuous deployment (CI/CD) pipeline project that automates the build, test, and deployment processes for software applications.
+
+### Server Performance Stats
+A script project that analyses server performance metrics
 
 # Contacts
 Logan Iavelli
