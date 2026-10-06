@@ -1,0 +1,21 @@
+:root {
+    --primary-bg: p#aa3d3d;
+    --primary-text: #444;
+    --standard-gap: 40px
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--primary-bg);
+    color: var(--primary-text)
+}
+
+#projects article {
+    background: #eee;
+    margin: var(--standard-gap)
+}
+
+nav {
+    background: yellow;
+
+}
