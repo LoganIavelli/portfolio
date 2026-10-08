@@ -49,3 +49,26 @@ header {
 nav {
   text-align: center;
 }
+
+nav ul {
+  list-style: none;  /*list-style removes bullet points found on ul */
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+footer {
+  margin: 0;
+  text-align: center;
+}
