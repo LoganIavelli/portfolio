@@ -66,6 +66,12 @@ nav a, address a {
   border: 5px solid var(--brown);
 }
 
+/* pseudo-class selector to give movement to clickable components on website */
+nav a:hover, address a:hover { 
+  color: var(--green);
+  transform: translateY(2px)
+}
+
 section {
   margin: 0;
   padding: 0;
@@ -105,8 +111,19 @@ footer {
   border-top: 10px solid var(--brown);
 }
 
+footer p {
+  max-width: none;
+  margin: 0;
+  font-size: 1;
+  color: var(--white);
+}
+
 img {
   max-width: 100%;
   border: 10px solid var(--white);
 }
+
+/* custom properties */
+
+
 
