@@ -5,7 +5,7 @@
 
   AI Disclosure
   Partial use of AI and external websites was used to learn about things not covered in the lecture videos for this portion.
-    cssgradient.io (easy way to preview and make the linear-gradients in the background as well as header and footer
+    cssgradient.io was used to easily customized and preview the linear-gradients used throughout.
     
     
 */
@@ -56,6 +56,15 @@ nav ul {
   padding: 0;
 }
 
+section {
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  border: 10px solid #d5d9cf;
+  border-bottom: 10px solid var(--brown);
+  border-radius: 10px
+}
+
 h1 {
   margin: 0;
 }
@@ -69,6 +78,10 @@ h3 {
 }
 
 footer {
-  margin: 0;
+  padding: 36px 20px 20px;
   text-align: center;
+  color: var(--white);
+  background: #2F6B5C;
+  background: linear-gradient(0deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
+  border-top: 10px solid var(--brown);
 }
