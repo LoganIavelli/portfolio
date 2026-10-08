@@ -1,21 +1,51 @@
+/*
+  Style sheet is inspired by the look of the Nintendo 3DS UI. It was a massive part of my childhood personally
+  Color Pallate inspired by Michigan State University
+  Just has basic in-line blocks and a normal flow
+
+  AI Disclosure
+  Partial use of AI and external websites was used to learn about things not covered in the lecture videos for this portion.
+    cssgradient.io (easy way to preview and make the linear-gradients in the background as well as header and footer
+    
+    
+*/
+
+@font-face {
+  font-family: 'Playfair';
+  src: url("fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+ 
+/* root ruleset to establish a color palatte for the website to follow */
 :root {
-    --primary-bg: p#aa3d3d;
-    --primary-text: #444;
-    --standard-gap: 40px
+  --green: #18453b;
+  --brown: #6b4a2f;
+  --white: #fdfdfb;
+  --black: #1d1d1b;
+  --font-main: "Playfair", Verdana, sans-serif;
 }
-
+ 
+/* body consists of a white-grey backdrop with a slight gradient */
 body {
-    font-family: sans-serif;
-    background: var(--primary-bg);
-    color: var(--primary-text)
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  font-size: 18px;
+  color: var(--black);
+  background: #ffffff;
+  background: linear-gradient(180deg,rgba(255, 255, 255, 1) 0%, rgba(230, 233, 225, 1) 100%);
 }
 
-#projects article {
-    background: #eee;
-    margin: var(--standard-gap)
+header {
+  padding: 36px 20px 20px;
+  text-align: center;
+  background: #2F6B5C;
+  background: linear-gradient(180deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
+  border-bottom: 10px solid var(--brown);
 }
 
 nav {
-    background: yellow;
-
+  text-align: center;
 }
