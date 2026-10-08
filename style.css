@@ -20,7 +20,7 @@
  
 /* root ruleset to establish a color palatte for the website to follow */
 :root {
-  --green: #18453b;
+  --green: #18453b; /* custom color properties */
   --brown: #6b4a2f;
   --white: #fdfdfb;
   --black: #1d1d1b;
@@ -67,14 +67,23 @@ section {
 
 h1 {
   margin: 0;
+  font-size: 2;
+  font-weight: normal;
+  color: var(--green);
 }
 
 h2 {
-  margin: 0;
+  margin: 0 0 18px;
+  font-size: 2;
+  font-weight: normal;
+  color: var(--brown);
 }
 
 h3 {
-  margin: 0;
+  margin: 0 0 18px;
+  font-size: 1.5;
+  font-weight: normal;
+  color: var(--brown);
 }
 
 footer {
@@ -85,3 +94,4 @@ footer {
   background: linear-gradient(0deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
   border-top: 10px solid var(--brown);
 }
+
