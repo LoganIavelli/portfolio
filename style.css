@@ -56,6 +56,16 @@ nav ul {
   padding: 0;
 }
 
+nav a, address a {
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 10px 10px;
+  color: var(--black);
+  background: #ffffff;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 231, 223, 1) 100%);
+  border: 5px solid var(--brown);
+}
+
 section {
   margin: 0;
   padding: 0;
@@ -93,5 +103,10 @@ footer {
   background: #2F6B5C;
   background: linear-gradient(0deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
   border-top: 10px solid var(--brown);
+}
+
+img {
+  max-width: 100%;
+  border: 10px solid var(--white);
 }
 
