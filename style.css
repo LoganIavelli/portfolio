@@ -8,6 +8,7 @@
     cssgradient.io was used to easily customized and preview the linear-gradients used throughout.
     
     
+    
 */
 
 @font-face {
@@ -44,6 +45,7 @@ header {
   background: #2F6B5C;
   background: linear-gradient(180deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
   border-bottom: 10px solid var(--brown);
+  border-radius: 0 0 40px 40px;
 }
 
 nav {
@@ -64,6 +66,7 @@ nav a, address a {
   background: #ffffff;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 231, 223, 1) 100%);
   border: 5px solid var(--brown);
+  border-radius: 12px;
 }
 
 /* pseudo-class selector to give movement to clickable components on website */
@@ -78,7 +81,11 @@ section {
   background-color: var(--white);
   border: 10px solid #d5d9cf;
   border-bottom: 10px solid var(--brown);
-  border-radius: 10px
+  border-radius: 24px
+}
+
+#about {
+  border-top: 8px solid var(--green);
 }
 
 h1 {
@@ -93,6 +100,19 @@ h2 {
   font-size: 2;
   font-weight: normal;
   color: var(--brown);
+  border-bottom: 4px dotted var(--green)
+}
+/* diamond right before each h2 listing out projects*/
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 12px;
+  background-color: var(--green);
+  border: 4px solid var(--brown);
+  border-radius: 4px;
+  transform: rotate(45deg);
 }
 
 h3 {
@@ -109,6 +129,7 @@ footer {
   background: #2F6B5C;
   background: linear-gradient(0deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
   border-top: 10px solid var(--brown);
+  border-radius: 40px 40px 0px 0px;
 }
 
 footer p {
@@ -121,6 +142,7 @@ footer p {
 img {
   max-width: 100%;
   border: 10px solid var(--white);
+  border-radius: 16px
 }
 
 /* custom properties */
