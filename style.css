@@ -6,9 +6,6 @@
   AI Disclosure
   Partial use of AI and external websites was used to learn about things not covered in the lecture videos for this portion.
     cssgradient.io was used to easily customized and preview the linear-gradients used throughout.
-    
-    
-    
 */
 
 @font-face {
@@ -75,6 +72,12 @@ nav a:hover, address a:hover {
   transform: translateY(2px)
 }
 
+img {
+  max-width: 100%;
+  border: 10px solid var(--white);
+  border-radius: 16px
+}
+
 section {
   margin: 0;
   padding: 0;
@@ -86,6 +89,35 @@ section {
 
 #about {
   border-top: 8px solid var(--green);
+}
+
+address a {
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+}
+
+/* rules to remove image borders on address images*/
+address img { 
+  display: block;
+  border: 0;
+  border-radius: 0;
+}
+
+p {
+  max-width: 60ch;
+  margin: 0 0 16px;
+  line-height: 2;
+  color: var(--black)
+}
+
+a {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+a[href^='https'] {
+  color: var(--brown);
+  text-decoration: underline dotted;
 }
 
 h1 {
@@ -102,7 +134,7 @@ h2 {
   color: var(--brown);
   border-bottom: 4px dotted var(--green)
 }
-/* diamond right before each h2 listing out projects*/
+/* diamond right before each h2 for style*/
 h2::before {
   content: "";
   display: inline-block;
@@ -119,7 +151,7 @@ h3 {
   margin: 0 0 18px;
   font-size: 1.5;
   font-weight: normal;
-  color: var(--brown);
+  color: var(--green);
 }
 
 footer {
@@ -139,13 +171,32 @@ footer p {
   color: var(--white);
 }
 
-img {
-  max-width: 100%;
-  border: 10px solid var(--white);
-  border-radius: 16px
+/* custom classes*/
+
+.card {
+  margin: 24px 0;
+  padding: 24px 24px;
+  background: var(--white);
+  background: linear-gradient(180deg, rgba(253, 253, 251, 1) 0%, rgba(238, 240, 234, 1) 100%);
+  border: 10px solid var(--green);
+  border-radius: 18px;
 }
 
-/* custom properties */
+.card:hover {
+  transform: rotate(0deg) scale(1.02);
+}
 
+.tag {
+  display: block;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px;
+  font-size: 1;
+  color: var(--white);
+  background-color: var(--brown);
+  border-radius: 10px;
+}
+
+
+ 
 
 
