@@ -130,14 +130,14 @@ a[href^='https'] {
 
 h1 {
   margin: 0;
-  font-size: 2;
+  font-size: 2rem;
   font-weight: normal;
   color: var(--green);
 }
 
 h2 {
   margin: 0 0 18px;
-  font-size: 2;
+  font-size: 2rem;
   font-weight: normal;
   color: var(--brown);
   border-bottom: 4px dotted var(--green)
@@ -157,7 +157,7 @@ h2::before {
 
 h3 {
   margin: 22px 0 18px;
-  font-size: 1.5;
+  font-size: 1.5rem;
   font-weight: normal;
   color: var(--green);
 }
@@ -176,7 +176,7 @@ footer {
 footer p {
   max-width: none;
   margin: 0;
-  font-size: 1;
+  font-size: 1rem;
   color: var(--white);
 }
 
@@ -201,7 +201,7 @@ footer p {
   display: block;
   margin: 0px 0px 0px 0px;
   padding: 0px 0px;
-  font-size: 1;
+  font-size: 1rem;
   color: var(--white);
   background-color: var(--brown);
   border-radius: 10px;
