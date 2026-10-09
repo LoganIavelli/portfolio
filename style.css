@@ -37,11 +37,11 @@ body {
 }
 
 header {
-  padding: 36px 20px 20px;
+  padding: 36px 20px 28px;
   text-align: center;
   background: #2F6B5C;
   background: linear-gradient(180deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
-  border-bottom: 10px solid var(--brown);
+  border-bottom: 6px solid var(--brown);
   border-radius: 0 0 40px 40px;
 }
 
@@ -57,8 +57,8 @@ nav ul {
 
 nav a, address a {
   display: inline-block;
-  margin: 10px 10px;
-  padding: 10px 10px;
+  margin: 6px 6px;
+  padding: 9px 18px;
   color: var(--black);
   background: #ffffff;
   background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 231, 223, 1) 100%);
@@ -79,11 +79,12 @@ img {
 }
 
 section {
-  margin: 0;
-  padding: 0;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 28px 32px;
   background-color: var(--white);
-  border: 10px solid #d5d9cf;
-  border-bottom: 10px solid var(--brown);
+  border: 5px solid #d5d9cf;
+  border-bottom: 8px solid var(--brown);
   border-radius: 24px
 }
 
@@ -148,19 +149,19 @@ h2::before {
 }
 
 h3 {
-  margin: 0 0 18px;
+  margin: 22px 0 18px;
   font-size: 1.5;
   font-weight: normal;
   color: var(--green);
 }
 
 footer {
-  padding: 36px 20px 20px;
+  padding: 28px 20px 36px;
   text-align: center;
   color: var(--white);
   background: #2F6B5C;
   background: linear-gradient(0deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
-  border-top: 10px solid var(--brown);
+  border-top: 6px solid var(--brown);
   border-radius: 40px 40px 0px 0px;
 }
 
@@ -178,7 +179,7 @@ footer p {
   padding: 24px 24px;
   background: var(--white);
   background: linear-gradient(180deg, rgba(253, 253, 251, 1) 0%, rgba(238, 240, 234, 1) 100%);
-  border: 10px solid var(--green);
+  border: 6px solid var(--green);
   border-radius: 18px;
 }
 
