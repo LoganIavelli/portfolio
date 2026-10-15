@@ -37,7 +37,7 @@ body {
 }
 
 header {
-  padding: 36px 20px 28px;
+  padding: 36px 20px 36px;
   text-align: center;
   background: #2F6B5C;
   background: linear-gradient(180deg, rgba(47, 107, 92, 1) 0%, rgba(17, 53, 45, 1) 52%, rgba(21, 62, 53, 1) 100%);
@@ -51,14 +51,22 @@ nav {
 }
 
 nav ul {
-  list-style: none;  /*list-style removes bullet points found on ul */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  list-style: none;
   margin: 0;
   padding: 0;
 }
 
+nav li {
+  display: flex;
+}
+
 nav a, address a {
-  display: inline-block;
-  margin: 6px 6px;
+  display: block;
+  margin: 0;
   padding: 9px 18px;
   color: var(--black);
   background: #ffffff;
@@ -66,9 +74,11 @@ nav a, address a {
   border: 3px solid var(--brown);
   border-radius: 12px;
   box-shadow: 0 4px 0 var(--brown), 0 8px 10px rgba(29, 29, 27, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, color 0.15s ease;
 }
 
 /* pseudo-class selector to give movement to clickable components on website */
+
 nav a:hover, address a:hover { 
   color: var(--green);
   transform: translateY(2px);
@@ -104,8 +114,13 @@ address a {
 
 /* rules to remove image borders on address images
    as well as box-shadow */
-address img { 
+address img {
   display: block;
+  width: 64px;
+  height: 64px;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
   border: 0;
   border-radius: 0;
   box-shadow: none;
@@ -179,6 +194,54 @@ footer p {
   font-size: 1rem;
   color: var(--white);
 }
+
+.parent {
+    display: grid;
+    justify-items:center;
+    align-items:center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 8px;
+}
+
+@media (min-width: 600px) {
+
+  .parent {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .div2 {
+    grid-column-start: 3;
+  }
+
+  .div3 {
+    grid-column-start: 5;
+  }
+
+  .div4 {
+    grid-row-start: 2;
+  }
+
+  .div5 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+
+  .div6 {
+    grid-column-start: 5;
+    grid-row-start: 2;
+  }
+  header {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+  }
+
+}
+
+
+        
+        
 
 /* custom classes*/
 
