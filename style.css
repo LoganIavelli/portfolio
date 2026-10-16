@@ -46,6 +46,13 @@ header {
   box-shadow: 0 8px 18px rgba(29, 29, 27, 0.35), inset 0 2px 0 rgba(255, 255, 255, 0.5);
 }
 
+/* AI Disclosure: This responsive flexbox navigation and dropdown setup was created with AI assistance.
+
+   nav elements were authored by AI models
+
+   Prompt: I want to incorporate a flexbox to the navigation elements of my websites style.css file. Don't code me an answer but I was wondering if I could make the flexbox work in this situation?
+
+   Response: */
 nav {
   text-align: center;
 }
@@ -62,6 +69,7 @@ nav ul {
 
 nav li {
   display: flex;
+  flex: 0 1 auto;
 }
 
 nav a, address a {
@@ -204,7 +212,98 @@ footer p {
     gap: 8px;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
+
+  /* AI Disclosure
+     This section was authored by AI:
+     Prompt: Could you create a flexbox setup for my nav elements in my style.css file. I want these to function as a drop-down menu on smaller displays while they stay up top on desktop displays. Additionally make sure that the functionality and animation for the elements remains from what has already been implemented. For these changes can you add a comment to the top of the coded section for an AI disclosure to be posted.
+     
+     AI Response:*/
+  nav {
+    width: min(100%, 320px);
+    margin: 20px auto 0;
+  }
+
+  nav::before {
+    content: "Menu";
+    display: block;
+    padding: 9px 18px;
+    color: var(--black);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(228, 231, 223, 1) 100%);
+    border: 3px solid var(--brown);
+    border-radius: 12px;
+    box-shadow: 0 4px 0 var(--brown), 0 8px 10px rgba(29, 29, 27, 0.35);
+  }
+
+  nav ul {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 8px;
+    max-height: 0;
+    overflow:hidden;
+    opacity: 0;
+    transition: max-height 0.25s ease, opacity 0.15s ease;
+  }
+
+  nav:hover ul,
+  nav:focus-within ul {
+    max-height: 240px;
+    margin-top: 12px;
+    opacity: 1;
+  }
+
+  nav li,
+  nav a {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  /* End of AI authored code. */
+}
+
+@media (min-width: 900px) {
+
+  header {
+    padding: 30px 16px;
+  }
+
+  section {
+    max-width: 640px;
+    margin: 32px auto;
+    padding: 24px;
+  }
+
+  .parent {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .div2 {
+    grid-column-start: 2;
+  }
+
+  .div3 {
+    grid-column-start: 3;
+  }
+
+  .div4 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+  }
+
+  .div5 {
+    grid-column-start: 2;
+    grid-row-start: 2;
+  }
+
+  .div6 {
+    grid-column-start: 3;
+    grid-row-start: 2;
+  }
+}
+
+
+@media (min-width: 1200px) {
 
   .parent {
     grid-template-columns: repeat(5, 1fr);
@@ -239,10 +338,6 @@ footer p {
 
 }
 
-
-        
-        
-
 /* custom classes*/
 
 .card {
@@ -272,5 +367,3 @@ footer p {
 
 
  
-
-
