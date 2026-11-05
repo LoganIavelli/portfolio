@@ -18,7 +18,8 @@
  
 /* root ruleset to establish a color palatte for the website to follow */
 :root {
-  --green: #18453b; /* custom color properties */
+  --green: #102F29; /* custom color properties */
+  --green-teal: #557160;
   --brown: #6b4a2f;
   --white: #fdfdfb;
   --black: #1d1d1b;
