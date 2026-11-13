@@ -160,9 +160,6 @@ address .div3 img {
   background: linear-gradient(135deg, #2ea44f 0%, #196c35 100%);
 }
 
-header > a > img {
-  filter: brightness(0) invert(1);
-}
 
 p {
   max-width: 60ch;
