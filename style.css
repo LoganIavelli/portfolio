@@ -148,6 +148,22 @@ address img {
   box-shadow: none;
 }
 
+address .div1 img {
+  background: linear-gradient(135deg, #0a66c2 0%, #004182 100%);
+}
+
+address .div2 img {
+  background: linear-gradient(135deg, #f28c28 0%, #c45b00 100%);
+}
+
+address .div3 img {
+  background: linear-gradient(135deg, #2ea44f 0%, #196c35 100%);
+}
+
+header > a > img {
+  filter: brightness(0) invert(1);
+}
+
 p {
   max-width: 60ch;
   margin: 0 0 16px;
