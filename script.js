@@ -1,3 +1,5 @@
+// AI Disclosure: ScrollReveal was installed using GitHub Copilot.
+
 const scrollReveal = ScrollReveal({
     distance: "40px",
     duration: 800,
