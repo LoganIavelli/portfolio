@@ -27,6 +27,7 @@
   --black: #1d1d1b;
   --border-white: #d5d9cf;
   --plum: #dda0dd;
+  /* AI Disclosure: AI was used to help generate these colors for the dark-mode addition as light-mode presets */
   --page-background-start: #ffffff;
   --page-background-end: #e6e9e1;
   --surface-start: #fdfdfb;
@@ -36,7 +37,10 @@
   --font-main: "Playfair", Verdana, sans-serif;
 }
 
-/*AI Disclosure: Copilot was used to generate a complementary color palatte to pair with dark mode in the spirit of the color palatte used in light mode*/
+/*AI Disclosure: Copilot was used to generate a complementary color palatte to pair with dark mode in the spirit of the color palatte used in light mode
+
+  Additionally, AI was used to quickly change all of the linear-gradients to surface-start and surface-end (and for buttons) to accomodate for the new dark mode
+  Prompt: Can you change all background rules to be in line with the dark-mode addition?*/
 [data-theme="dark"] {
   --black: #fdfdfb;
   --white: #fdfdfb;
@@ -58,11 +62,7 @@ body {
   font-family: var(--font-main);
   font-size: 18px;
   color: var(--black);
-  background: linear-gradient(
-    180deg,
-    var(--page-background-start) 0%,
-    var(--page-background-end) 100%
-  );
+  background: linear-gradient(180deg, var(--page-background-start) 0%, var(--page-background-end) 100%);
 }
 
 header {
@@ -104,11 +104,7 @@ nav li {
 nav a, address a {
   display: block;
   color: var(--black);
-  background: linear-gradient(
-    180deg,
-    var(--button-start) 0%,
-    var(--button-end) 100%
-  );
+  background: linear-gradient(180deg, var(--button-start) 0%, var(--button-end) 100%);
   border: 3px solid var(--border-white);
   border-radius: 12px;
   box-shadow: 0 8px 10px rgba(29, 29, 27, 0.35);
@@ -137,11 +133,7 @@ button {
   margin: 12px;
   padding: 9px 18px;
   color: var(--black);
-  background: linear-gradient(
-    180deg,
-    var(--button-start) 0%,
-    var(--button-end) 100%
-  );
+  background: linear-gradient(180deg, var(--button-start) 0%, var(--button-end) 100%);
   border: 3px solid var(--border-white);
   border-radius: 12px;
   cursor: pointer;
